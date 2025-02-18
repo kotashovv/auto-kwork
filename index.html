@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -19,23 +20,21 @@
                             <span>Money</span>
                         </a>
                     </div>
-                    <div class="header__body">
+                    <div class="header__nav">
                         <nav>
                             <ul>
                                 <li class="with-sublist">
-                                    <a href="#">Реклама</a>
-                                    <ul class="sublist">
-                                        <li>
-                                            <a href="#"></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#">Водителям</a>
                                 </li>
-                                <li>
+                                <li class="with-sublist">
+                                    <a href="#">Рекламодателям</a>
+                                </li>
+                                <!-- <li>
                                     <a href="#">Контакты</a>
                                 </li>
                                 <li>
                                     <a href="#">Помощь</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>
@@ -51,9 +50,38 @@
                             </a>
                         </div>
                         <div class="header__burger">
-                            <button class="burger-btn"></button>
+                            <button class="burger-btn"><span></span></button>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="mobile-header">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Ссылка 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Ссылка 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Ссылка 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Ссылка 1</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="info">
+                    <a href="#">
+                        test@gmail.com
+                    </a>
+                </div>
+                <div class="action">
+                    <button data-popup="#popup-for-drivers" class="main-btn" href="#">
+                        Оставить заявку
+                    </button>
                 </div>
             </div>
         </header>
@@ -68,7 +96,7 @@
                             </strong>
                         </h1>
                         <div class="action">
-                            <button class="main-btn">Оставить заявку</button>
+                            <button data-popup="#popup-for-drivers" class="main-btn">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -157,7 +185,7 @@
                 <div class="container">
                     <div class="work__title ">
                         <h2 class="section-title">
-                            Шаги к подключению 
+                            Шаги к подключению
                         </h2>
                     </div>
                     <div class="work__items">
@@ -238,16 +266,16 @@
 
             <section class="gallery">
                 <div class="gallery__items">
-                    <a class="gallery__item" data-fancybox="gallery" href="#">
+                    <a class="gallery__item" data-fancybox="gallery" href="assets/imgs/g1.jpg">
                         <img src="assets/imgs/g1.jpg" alt="">
                     </a>
-                    <a class="gallery__item" data-fancybox="gallery" href="#">
+                    <a class="gallery__item" data-fancybox="gallery" href="assets/imgs/g2.jpg">
                         <img src="assets/imgs/g2.jpg" alt="">
                     </a>
-                    <a class="gallery__item" data-fancybox="gallery" href="#">
+                    <a class="gallery__item" data-fancybox="gallery" href="assets/imgs/g3.jpg">
                         <img src="assets/imgs/g3.jpg" alt="">
                     </a>
-                    <a class="gallery__item" data-fancybox="gallery" href="#">
+                    <a class="gallery__item" data-fancybox="gallery" href="assets/imgs/g4.jpg">
                         <img src="assets/imgs/g4.jpg" alt="">
                     </a>
                 </div>
@@ -316,7 +344,86 @@
                 </div>
             </div>
 
-           
+            <section class="faq">
+                <div class="container">
+                    <div class="faq__title">
+                        <h2 class="section-title">
+                            Частые вопросы:
+                        </h2>
+                    </div>
+
+                    <div class="faq__items">
+                        <article class="faq__item">
+                            <button class="faq__btn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo!</button>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam dolor corporis soluta cumque veniam autem, impedit ratione. Libero dolore in nesciunt omnis eos aperiam facere voluptate veniam doloribus assumenda.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="faq__item">
+                            <button class="faq__btn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo!</button>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam dolor corporis soluta cumque veniam autem, impedit ratione. Libero dolore in nesciunt omnis eos aperiam facere voluptate veniam doloribus assumenda.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="faq__item">
+                            <button class="faq__btn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo!</button>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam dolor corporis soluta cumque veniam autem, impedit ratione. Libero dolore in nesciunt omnis eos aperiam facere voluptate veniam doloribus assumenda.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="faq__item">
+                            <button class="faq__btn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo!</button>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magnam dolor corporis soluta cumque veniam autem, impedit ratione. Libero dolore in nesciunt omnis eos aperiam facere voluptate veniam doloribus assumenda.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="popup">
+                <div class="popup__body">
+                    <div id="popup-for-drivers" class="popup__item">
+                        <button class="close-menu">
+                        </button>
+                        <div class="popup__item-title">
+                            Оставить заявку
+                        </div>
+                        <form action="">
+                            <input type="hidden" value="Заявка от водителя!">
+                            <label>
+                                <span>Ваше имя</span>
+                                <input placeholder="Фамилия имя" type="text">
+                            </label>
+                            <label>
+                                <span>Номер телефона</span>
+                                <input type="tel" placeholder="+79008007070"> 
+                            </label>
+                            <label>
+                                <span>Формат рекламы:</span>
+                                <select name="target">
+                                    <option value="Полный">Полная обклейка</option>
+                                    <option value="Частичная">Частичная обклейка</option>
+                                    <option value="Только стекла">Только стекла</option>
+                                </select>
+                            </label>
+                            <div class="action">
+                                <button type="submit" class="main-btn">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <div class="container">
@@ -346,6 +453,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

@@ -38,9 +38,39 @@
         }
     }
 }
-.container {
+
+
+@media(max-width:920px) {
+    .hero {
+        background-position: bottom center;
+        &__text {
+            justify-content: center;
+            max-width: none;
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 36px;
+            }
+            .action {
+                width: 100%;
+                display: block;
+                button {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
-.action {
-}
-.main-btn {
+
+@media(max-width:560px) {
+    .hero {
+        &__text {
+            &::after {
+                content: '';
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
 }

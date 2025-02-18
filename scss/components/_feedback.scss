@@ -19,7 +19,12 @@
         justify-content: center;
     }
 }
-.container {
-}
-.main-btn {
+
+@media(max-width:920px) {
+    .feedback {
+        padding: 60px 0;
+        &__title {
+            font-size: 32px;
+        }
+    }
 }

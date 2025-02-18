@@ -41,3 +41,34 @@
         }
     }
 }
+
+@media(max-width:920px) {
+    .breaker {
+        padding: 40px 0;
+        box-sizing: border-box;
+        background-color: #120526;
+        color: #fff;
+        &__text {
+            margin: 0;
+            max-width: none;
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: center;
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        &__img {
+            max-width: 420px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__body {
+            flex-direction: column-reverse;
+            
+        }
+    }
+}

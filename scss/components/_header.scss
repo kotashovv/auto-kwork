@@ -8,6 +8,10 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
+    .mobile-header {
+        display: none;
+    }
     &__body {
         display: flex;
         align-items: center;
@@ -93,18 +97,131 @@
         display: none;
     }
 }
-.container {
-}
-.with-sublist {
-}
-.sublist {
-}
-.t-sociallinks {
 
-    // .t-sociallinks__svg
 
-    &__svg {
+@media(max-width:768px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+        &__action {
+            display: flex;
+            align-items: center;
+        }
+        &__burger {
+            display: block;
+            margin-left: 15px;
+            button {
+                &.active {
+                    span {
+                        opacity: 0;
+                    }
+                    &::before {
+                        transform: rotate(45deg);
+                        top: calc(50% - 1px);
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                        top: calc(50% - 1px);
+
+                    }
+                }
+                width: 40px;
+                height: 35px;
+                position: relative;
+                border: none;
+                background-color: transparent;
+                padding: 5px;
+                span {
+                    position: absolute;
+                    top: calc(50% - 1px);
+                    left: 5px;
+                    width: calc(100% - 10px);
+                    box-sizing: border-box;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: .35s ease;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    left: 5px;
+                    width: calc(100% - 10px);
+                    box-sizing: border-box;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: .35s ease;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 5px;
+                    left: 5px;
+                    width: calc(100% - 10px);
+                    box-sizing: border-box;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: .35s ease;
+                }
+            }
+        }
+
+        .mobile-header {
+            display: block;
+            padding: 0 20px;
+            box-sizing: border-box;
+            max-height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            transition: .35s ease;
+            &.active {
+                opacity: 1;
+                max-height: max-content;
+                visibility: visible;
+            }
+            nav {
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    li {
+                        margin-right: 0;
+                        margin-bottom: 5px;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        a {
+                            display: block;
+                            width: 100%;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+            .info {
+                margin-bottom: 15px;
+                a {
+                    padding: 10px 0;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                    color: #fff;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                }
+            }
+            .action {
+                button {
+                    max-width: none;
+                }
+            }
+        }
     }
 }
-.burger-btn {
+
+@media(max-width:560px) {
 }
