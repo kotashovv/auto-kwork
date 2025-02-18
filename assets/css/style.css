@@ -701,6 +701,9 @@ main.main.filter-black {
   }
 }
 @media (max-width: 560px) {
+  .hero__text::after {
+    content: "";
+  }
   .hero__text h1 {
     font-size: 28px;
   }
