@@ -1,0 +1,22 @@
+.gallery {
+    box-sizing: border-box;
+    // .gallery__items
+
+    &__items {
+        display: flex;
+        align-items: stretch;
+    }
+
+    // .gallery__item
+
+    &__item {
+        width: 25%;
+        height: 260px;
+        img{
+            width: 100%;
+            box-sizing: border-box;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

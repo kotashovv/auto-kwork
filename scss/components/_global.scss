@@ -1,0 +1,38 @@
+.container {
+    margin: 0 auto;
+    max-width: 1340px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-btn {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: $color1;
+    padding: 20px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+    transition: .35s ease;
+    cursor: pointer;
+    &:hover {
+        filter: brightness(.9);
+    }
+    &:active {
+        transform: scale(.98);
+    }
+}
+
+.section-title {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    display: block;
+    margin-bottom: 80px;
+}

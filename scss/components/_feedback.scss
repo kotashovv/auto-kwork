@@ -1,0 +1,25 @@
+.feedback {
+    padding: 60px 0;
+    box-sizing: border-box;
+    // .feedback__title
+    background-color: #120526;
+
+    color: #fff;
+    &__title {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 48px;
+    }
+
+    // .feedback__action
+
+    &__action {
+        display: flex;
+        justify-content: center;
+    }
+}
+.container {
+}
+.main-btn {
+}

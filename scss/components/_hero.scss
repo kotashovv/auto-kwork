@@ -1,0 +1,46 @@
+.hero {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../../assets/imgs/herobg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    .container {
+        height: 100%;
+    }
+    // .hero__text
+
+    &__text {
+        color: #fff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        text-align: left;
+        max-width: 620px;
+        flex-direction: column;
+        h1 {
+            font-family: $font2;
+            font-weight: 600;
+            font-size: 48px;
+            margin: 0;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            strong {
+                color: $color1;
+                span {
+                    color: #fff;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+.container {
+}
+.action {
+}
+.main-btn {
+}

@@ -1,0 +1,43 @@
+.breaker {
+    padding: 60px 0;
+    box-sizing: border-box;
+    
+    // .breaker__body
+
+    &__body {  
+        display: flex;
+        align-items: center;
+    }
+
+    // .breaker__img
+
+    &__img {
+        width: calc(50% - 40px);
+        margin-right: 40px;
+        img{
+            display: block;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+    }
+
+    // .breaker__text
+
+    &__text {
+        width: 50%;
+        h2 {
+            font-size: 36px;
+            margin: 0;
+            display: block;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        p {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}

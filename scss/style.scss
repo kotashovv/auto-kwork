@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font1: 'Jost', sans-serif ;
+$font2: 'Montserrat', sans-serif ;
+$color1: #7e38ff;
+
+body {
+    font-family: $font1;
+}
+
+@import 'normalize';
+
+@import 'components/global';
+
+@import 'components/header';
+
+@import 'components/hero';
+
+@import 'components/breaker';
+
+@import 'components/edge';
+
+@import 'components/steps';
+
+@import 'components/feedback';
+
+@import 'components/gallery';
+
+@import 'components/reviews';
+
+@import 'components/footer';
